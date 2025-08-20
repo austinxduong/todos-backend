@@ -13,3 +13,5 @@ router.post("/register", (req, res, next) => {
 router.post("/logout", (req, res, next) => {
     res.send("logout router")
 });
+
+export default router;
