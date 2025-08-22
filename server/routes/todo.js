@@ -8,10 +8,6 @@ router.get("/", getAllTodos);
 
 router.post("/", addATodos)
 
-router.post("/", (req, res, next) => {
-    res.send("get all todos");
-});
-
 router.put("/:id", updateATodos);
 
 // router.put("/:id", (req, res, next) => {
@@ -19,15 +15,9 @@ router.put("/:id", updateATodos);
 //     res.send(`updated a todo with id: ${req.params.id}`);
 // });
 
-router.get("/:id", (req, res, next) => {
-    console.log(req.params.id);
-    res.send(`get todo with id ${req.params.id}`);
-});
+router.get("/:id", getATodos);
 
-router.delete("/:id", (req, res, next) => {
-    console.log(req.params.id);
-    res.send(`deleted a todo with id: ${req.params.id}`);
-});
+router.delete("/:id", deleteATodos);
 
 
 export default router;
