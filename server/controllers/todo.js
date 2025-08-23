@@ -13,3 +13,7 @@ export async function updateATodos(req, res, next) {
 export async function deleteATodos(req, res, next) {
     res.send("register route");
 }
+
+export async function addATodos(req, res, next) {
+    res.send("register route");
+}
