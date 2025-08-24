@@ -5,13 +5,12 @@ const router = express.Router();
 
 // authenticate/reqister users to sign up/login
 
-router.post("/login", login);
-
 router.post("/register", register);
-
 // router.post("/register", (req, res, next) => {
 //     res.send("register router")
 // });
+
+router.post("/login", login);
 
 router.post("/logout", logout);
 
